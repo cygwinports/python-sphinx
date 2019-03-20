@@ -2,7 +2,7 @@ ORIG_PN="Sphinx"
 inherit python-wheel
 
 NAME="python-sphinx"
-VERSION=1.6.5
+VERSION=1.8.5
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python documentation generator"
@@ -14,6 +14,7 @@ HOMEPAGE="http://sphinx-doc.org/"
 
 ARCH=noarch
 
-python2_sphinx_REQUIRES="python2-alabaster python2-sphinx_rtd_theme"
-python3_sphinx_REQUIRES="python3-alabaster python3-sphinx_rtd_theme"
-python3_sphinx_CONTENTS+=" usr/bin/sphinx-*"
+python27_sphinx_REQUIRES="python27-alabaster python27-sphinx_rtd_theme"
+python36_sphinx_REQUIRES="python36-alabaster python36-sphinx_rtd_theme"
+python37_sphinx_REQUIRES="python37-alabaster python37-sphinx_rtd_theme"
+python37_sphinx_CONTENTS+=" usr/bin/sphinx-*"
